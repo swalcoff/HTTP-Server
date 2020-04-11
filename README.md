@@ -27,4 +27,4 @@ where localfile is the file you'd like to send and filename is name you'd like t
 `curl http://localhost:8080 --request-target filename -v`  
 where filename is the name of the file you'd like to retrieve.  
   
-For both types of requests, appropriate http status codes will be returned.
+For both types of requests, appropriate http status codes will be returned and filename should either be a txt or pdf file.
