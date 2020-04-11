@@ -1,5 +1,5 @@
 # HTTP-Server
-Implemented in C++, this is an HTTP server that is multiple thread capable. Each thread can run synchronously. This server can maintain a cache and logfile for said cache to increase efficiency of client requested reads and writes. Cache and logfile are optional. The client may also choose the number of threads.
+Implemented in C++, this is an HTTP server that is multiple thread capable. Each thread can run synchronously. This server can maintain a cache and logfile for said cache to increase efficiency of client requested reads and writes. Cache and logfile are optional. The client may also choose the number of threads. **Windows or linux is recommended**.
 
 ## Instructions:
 First, clone project or download ServerApp.exe
@@ -13,11 +13,12 @@ The flags are as follows:
 **-c**: enables caching.  
   
 ### Client Side
+Type these commands in terminal
 PUT request:  
-''**curl -T localfile http://localhost:8080 --request-target filename -v**''  
+**curl -T localfile http://localhost:8080 --request-target filename -v**  
 where localfile is the file you'd like to send and filename is name you'd like to give to the targetfile in the server. If the file already exists, it will be overwriten.  
 GET request:  
-''**curl http://localhost:8080 --request-target filename -v**''  
+**curl http://localhost:8080 --request-target filename -v**  
 where filename is the name of the file you'd like to retrieve.  
   
 For both types of requests, appropriate http status codes will returned.
