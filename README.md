@@ -6,11 +6,11 @@ First, clone project or download ServerApp.exe
 
 ### Server Side
 Store ServerApp.exe in its own folder so that all information uploaded by the client is stored safely in said folder. Run ServerApp.exe in terminal using this command:  
-**./ServerApp**
+**./ServerApp**  
 The flags are as follows:  
--N <numThreads>: controls the number of threads to be run on the server. default of 4 threads if this flag is not specifed.  
--l: enables logging. If logging is active, log records will contain the type of request, whether the page was in cache when the request is received, and contents of the file in hex.  
--c: enables caching.  
+**-N \<numThreads\>**: controls the number of threads to be run on the server. default of 4 threads if this flag is not specifed.  
+**-l**: enables logging. If logging is active, log records will contain the type of request, whether the page was in cache when the request is received, and contents of the file in hex.  
+**-c**: enables caching.  
   
 ### Client Side
 PUT request:  
