@@ -14,10 +14,10 @@ The flags are as follows:
   
 ### Client Side
 PUT request:  
-**curl -T localfile http://localhost:8080 --request-target filename -v**  
+''**curl -T localfile http://localhost:8080 --request-target filename -v**''  
 where localfile is the file you'd like to send and filename is name you'd like to give to the targetfile in the server. If the file already exists, it will be overwriten.  
 GET request:  
-**curl http://localhost:8080 --request-target filename -v**  
+''**curl http://localhost:8080 --request-target filename -v**''  
 where filename is the name of the file you'd like to retrieve.  
   
 For both types of requests, appropriate http status codes will returned.
