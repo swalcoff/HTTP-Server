@@ -6,7 +6,10 @@ First, clone project or download ServerApp.exe
 
 ### Server Side
 Store ServerApp.exe in its own folder so that all information uploaded by the client is stored safely in said folder. Run ServerApp.exe in terminal using this command:  
-**./ServerApp** 
+`./ServerApp`
+  
+If you'd like to compile manually:  
+`clang++ -std=gnu++11 -Wall -Wextra -Wpedantic -Wshadow`
   
 The flags are as follows:  
 **-N \<numThreads\>**: controls the number of threads to be run on the server. default of 4 threads if this flag is not specifed.  
