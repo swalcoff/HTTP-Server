@@ -9,7 +9,7 @@ Store ServerApp.exe in its own folder so that all information uploaded by the cl
 `./ServerApp`
   
 If you'd like to compile manually:  
-`clang++ -std=gnu++11 -Wall -Wextra -Wpedantic -Wshadow`
+`clang++ -std=gnu++11 -Wall -Wextra -Wpedantic -Wshadow httpserver.cpp`
   
 The flags are as follows:  
 **-N \<numThreads\>**: controls the number of threads to be run on the server. default of 4 threads if this flag is not specifed.  
