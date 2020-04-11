@@ -11,7 +11,7 @@ Store ServerApp.exe in its own folder so that all information uploaded by the cl
 If you'd like to compile manually:  
 `clang++ -std=gnu++11 -Wall -Wextra -Wpedantic -Wshadow httpserver.cpp`
   
-The flags are as follows:  
+**FLAGS:**  
 **-N \<numThreads\>**: controls the number of threads to be run on the server. default of 4 threads if this flag is not specifed.  
 **-l**: enables logging. If logging is active, log records will contain the type of request, whether the page was in cache when the request is received, and contents of the file in hex.  
 **-c**: enables caching.  
