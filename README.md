@@ -14,7 +14,8 @@ The flags are as follows:
 **-c**: enables caching.  
   
 ### Client Side
-Type these commands in terminal..  
+Type these commands in terminal...  
+   
 **PUT request:**  
 `curl -T localfile http://localhost:8080 --request-target filename -v`  
 where localfile is the file you'd like to send and filename is name you'd like to give to the targetfile in the server. If the file already exists, it will be overwriten.  
