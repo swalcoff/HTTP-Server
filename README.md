@@ -9,23 +9,23 @@ Store ServerApp.exe in its own folder so that all information uploaded by the cl
 `./ServerApp`
   
 If you'd like to compile and run manually(flags optional!):  
-1) $make 
-2) $./httpserver -N 1 -c -l [log_file_name] localhost 8080   
+  1) $make 
+  2) $./httpserver -N 1 -c -l [log_file_name] localhost 8080   
   
 **FLAGS:**  
-**-N \<numThreads\>**: controls the number of threads to be run on the server. default of 4 threads if this flag is not specifed.  
-**-l [log_file_name]**: enables logging. If logging is active, log records will contain the type of request, whether the page was in cache when the request is received, and contents of the file in hex.  
-**-c**: enables caching.  
+  1) **-N \<numThreads\>**: controls the number of threads to be run on the server. default of 4 threads if this flag is not specifed.  
+  2) **-l [log_file_name]**: enables logging. If logging is active, log records will contain the type of request, whether the page was in cache when the request is received, and contents of the file in hex.  
+  3) **-c**: enables caching.  
   
 ### Client Side
 Type these commands in terminal...  
    
 **PUT request:**  
-`curl -T localfile http://localhost:8080 --request-target filename -v`  
-where localfile is the file you'd like to send and filename is name you'd like to give to the targetfile in the server. If the file already exists, it will be overwriten.  
+  `curl -T localfile http://localhost:8080 --request-target filename -v`  
+  where localfile is the file you'd like to send and filename is name you'd like to give to the targetfile in the server. If the file     already exists, it will be overwriten.  
   
 **GET request:**  
-`curl http://localhost:8080 --request-target filename -v`  
-where filename is the name of the file you'd like to retrieve.  
+  `curl http://localhost:8080 --request-target filename -v`  
+  where filename is the name of the file you'd like to retrieve.  
   
-For both types of requests, appropriate http status codes will be returned and filename should either be a txt or pdf file.
+  For both types of requests, appropriate http status codes will be returned and filename should either be a txt or pdf file.
