@@ -2,7 +2,7 @@
 Implemented in C++, this is an HTTP server that is multiple thread capable. Each thread can run synchronously. This server can maintain a cache and logfile for said cache to increase efficiency of client requested reads and writes. Cache and logfile are optional. The client may also choose the number of threads. This server runs on port 8080 by default. Source code is available in httpserver.cpp. **Windows or linux is highly recommended**.
 
 ## Instructions:
-First, clone project or download ServerApp.exe
+First, clone project or download ServerApp.exe. It is recommended the ServerApp.exe and the client are in different folders.
 
 ### Server Side
 Store ServerApp.exe in its own folder so that all information uploaded by the client is stored safely in said folder. Run ServerApp.exe in terminal using this command:  
