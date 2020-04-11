@@ -10,11 +10,11 @@ Store ServerApp.exe in its own folder so that all information uploaded by the cl
   
 If you'd like to compile and run manually(flags optional!):  
   1) $make 
-  2) $./httpserver -N 1 -c -l [log_file_name] localhost 8080   
+  2) $./httpserver -N 1 -c -l \[log_file_name] localhost 8080   
   
 **FLAGS:**  
-  1) **-N \<numThreads\>**: controls the number of threads to be run on the server. default of 4 threads if this flag is not specifed.  
-  2) **-l [log_file_name]**: enables logging. If logging is active, log records will contain the type of request, whether the page was in cache when the request is received, and contents of the file in hex.  
+  1) **-N \[numThreads]**: controls the number of threads to be run on the server. default of 4 threads if this flag is not specifed.  
+  2) **-l \[log_file_name]**: enables logging. If logging is active, log records will contain the type of request, whether the page was in cache when the request is received, and contents of the file in hex.  
   3) **-c**: enables caching.  
   
 ### Client Side
