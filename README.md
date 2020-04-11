@@ -5,15 +5,16 @@ Implemented in C++, this is an HTTP server that is multiple thread capable. Each
 First, clone project or download ServerApp.exe. It is recommended the ServerApp.exe and the client are in different folders.
 
 ### Server Side
-Store ServerApp.exe in its own folder so that all information uploaded by the client is stored safely in said folder. Run ServerApp.exe in terminal using this command:  
+Store ServerApp.exe in its own folder so that all information uploaded by the client is stored safely in said folder. Run ServerApp.exe by double clicking or in terminal using this command:  
 `./ServerApp`
   
-If you'd like to compile manually:  
-`clang++ -std=gnu++11 -Wall -Wextra -Wpedantic -Wshadow httpserver.cpp`
+If you'd like to compile and run manually(flags optional!):  
+1) $make 
+2) $./httpserver -N 1 -c -l [log_file_name] localhost 8080   
   
 **FLAGS:**  
 **-N \<numThreads\>**: controls the number of threads to be run on the server. default of 4 threads if this flag is not specifed.  
-**-l**: enables logging. If logging is active, log records will contain the type of request, whether the page was in cache when the request is received, and contents of the file in hex.  
+**-l [log_file_name]**: enables logging. If logging is active, log records will contain the type of request, whether the page was in cache when the request is received, and contents of the file in hex.  
 **-c**: enables caching.  
   
 ### Client Side
